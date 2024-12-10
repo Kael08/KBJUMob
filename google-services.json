@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "47001073270",
+    "project_id": "kbju-115b8",
+    "storage_bucket": "kbju-115b8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47001073270:android:b1f2276e79bc065857d157",
+        "android_client_info": {
+          "package_name": "ENEEV.kbju1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBh53T0KHXlEnZkRImLEFGIpfU9DHj9ac0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

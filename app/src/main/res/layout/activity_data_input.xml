@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!--Поле для ввода имени-->
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите имя"
+            android:minHeight="48dp"
+            android:padding="16dp" />
+
+
+        <!--Поле для ввода роста-->
+        <EditText
+            android:id="@+id/heightInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите ваш рост(см)"
+            android:minHeight="48dp"
+            android:padding="16dp" />
+
+        <!--Поле для ввода веса-->
+        <EditText
+            android:id="@+id/weightInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите ваш вес(кг)"
+            android:minHeight="48dp"
+            android:padding="16dp" />
+
+        <!--Поле для ввода возраста-->
+        <EditText
+            android:id="@+id/ageInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите ваш возраст"
+            android:minHeight="48dp"
+            android:padding="16dp" />
+
+        <!--Надпись для возраста-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Укажите ваш пол"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:padding="8dp"/>
+
+        <!-- Группа радиокнопок для выбора пола -->
+        <RadioGroup
+            android:id="@+id/genderRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/maleRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Мужской"/>
+
+            <RadioButton
+                android:id="@+id/femaleRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Женский"/>
+        </RadioGroup>
+
+        <!--Надпись для выбора цели-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Укажите вашу цель"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:padding="8dp"/>
+
+        <!-- Группа радиокнопок для выбора цели -->
+        <RadioGroup
+            android:id="@+id/purposeRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/weight_maintenanceRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Поддержание веса"/>
+
+            <RadioButton
+                android:id="@+id/muscle_growthRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Рост мышц"/>
+        </RadioGroup>
+
+
+        <!-- Выбор образа жизни -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Укажите ваш коэффициент активности"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:padding="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/activity_coefficientRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/minimumRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Минимальный уровень нагрузки"/>
+
+            <RadioButton
+                android:id="@+id/easyRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Легкий уровень нагрузки"/>
+
+            <RadioButton
+                android:id="@+id/normalRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Умеренный уровень нагрузок"/>
+
+            <RadioButton
+                android:id="@+id/hardRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Интенсивный уровень нагрузок"/>
+
+            <RadioButton
+                android:id="@+id/extremeRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Экстремальный уровень нагрузок"/>
+
+        </RadioGroup>
+
+        <!-- Кнопка для отправки данных -->
+        <ImageView
+            android:id="@+id/helpIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_help" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Отправить данные" />
+
+    </LinearLayout>
+
+</ScrollView>

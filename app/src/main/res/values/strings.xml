@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">KBJU App</string>
+    <string name="authorization">Авторизация</string>
+    <string name="data_input">Ввод данных</string>
+</resources>

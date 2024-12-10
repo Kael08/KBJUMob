@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Поле для ввода номера телефона -->
+    <EditText
+        android:id="@+id/phoneNumberInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите номер телефона"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:padding="16dp"/>
+
+    <!-- Кнопка для отправки кода -->
+    <Button
+        android:id="@+id/sendCodeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Отправить код"
+        android:minHeight="48dp"
+        android:padding="16dp"/>
+
+    <!-- Поле для ввода кода -->
+    <EditText
+        android:id="@+id/codeInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите код"
+        android:visibility="gone"
+        android:minHeight="48dp"
+        android:padding="16dp"/>
+
+    <!-- Кнопка для подтверждения кода -->
+    <Button
+        android:id="@+id/verifyCodeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Подтвердить"
+        android:visibility="gone"
+        android:minHeight="48dp"
+        android:padding="16dp"/>
+</LinearLayout>
